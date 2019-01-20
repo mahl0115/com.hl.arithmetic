@@ -29,9 +29,10 @@ public class SingleNumberTest {
     public static void main(String[] args) {
         int[] array = {2, 2, 1};
         int[] array2 = {4, 1, 2, 1, 2};
+        int[] array3 = {1,0,1};
 
-        System.out.println("结果为: " + method(array2));
-        //System.out.println("结果为: " + singleNumber(array2));
+        //System.out.println("结果为: " + method(array2));
+        System.out.println("结果为: " + singleNumber2(array3));
     }
 
     /**
