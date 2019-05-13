@@ -35,7 +35,6 @@ public class MoveZeroesTest {
                 nums[j] = 0;
                 i++;
             }
-            //System.out.println(Arrays.toString(nums) + "i=" + i + ", j=" + j);
         }
         return nums;
     }
