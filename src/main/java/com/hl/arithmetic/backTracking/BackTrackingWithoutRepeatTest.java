@@ -15,8 +15,8 @@ import java.util.List;
 public class BackTrackingWithoutRepeatTest {
 
     public static void main(String[] args) {
-        int[] candidates = new int[]{6, 7, 2, 3};
-        int target = 9;
+        int[] candidates = new int[]{2, 4, 6, 8, 1, 3, 5, 7};
+        int target = 15;
         combinationSum(candidates, target);
     }
 
@@ -35,7 +35,7 @@ public class BackTrackingWithoutRepeatTest {
             return;
         }
         for (int j = start; j < candidates.length; j++) {
-            if (candidates[start] > target) {
+            if (candidates[j] > target) {
                 break;
             }
             List<Integer> list = Lists.newArrayList(tmp);
